@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="author" content="Sungbae Kang"/>
+    <meta name="keywords" content="Eclipse, JDK, JRE, JVM, Oracle"/>
+    <meta name="description" content="Development Environment Settings"/>
+    <title>SUMMARY 01_903_13</title>
+    <style>
+      li {
+        padding:3px;
+      }
+      aside {
+        width: 50%;
+        padding: 10px;
+        background-color:lightgray;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>제1강 요약</h1>
+        <h2>개발환경 구축</h2>
+        <h4>그래픽 기반의 실시간AI서비스를 활용한 cross-platform 개발자양성과정 13회차 (903호)</h4>
+      </hgroup>
+      <nav>
+        <a href="#eclp_install">이클립스 설치</a> | 
+        <a href="#eclp_setting">이클립스 설정</a> | 
+        <a href="#jdk_install">JDK 설치</a> | 
+        <a href="#ev_setting">환경변수 설정</a>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section id="eclp_install">
+        <h3>이클립스(Eclipse) 설치</h3>
+        <ol>
+          <li>경로 : <a href="https://www.eclipse.org/downloads/packages/release/2022-03/r" target="_blank">https://www.eclipse.org/downloads/packages/release/2022-03/r</a></li>
+          <li>Eclipse IDE for Enterprise Java and Web Developers (Windows x86_64) 다운로드</li>
+          <li>C:\JAVA\ 폴더에 압축풀기</li>
+          <li>C:\JAVA\eclipse\eclipse.exe 실행</li>
+          <li>Select a directory as workspace 창에서 C:\JAVA\JAVA_240521\ 경로로 workspace 설정</li>
+          <li>Use this as the default and do no ask again 체크박스 체크</li>
+          <li>Launch 실행 후 welcome 창 닫기</li>
+        </ol>
+      </section>
+      <section id="eclp_setting">
+        <h3>이클립스(Eclipse) 상세설정</h3>
+        <ol>
+          <li>Window - Preference - General - Web Browser - External web browsers 중 chorme 체크 후 Apply</li>
+          <li>Window - Preference - General - Workspace 창에서 Text file encoding을 Other 중 UTF-8로 변경 후 Apply</li>
+          <li>Window - Preference - Web - CSS Files 창에서 Encoding을 ISO 10646/Unicode(UTF-8)로 변경 후 Apply</li>
+          <li>Window - Preference - Web - HTML Files 창에서 Encoding을 ISO 10646/Unicode(UTF-8)로 변경 후 Apply</li>
+          <li>Window - Preference - Web - JSP Files 창에서 Encoding을 ISO 10646/Unicode(UTF-8)로 변경 후 Apply</li>
+          <li>Window - Preference - General - Apperance - Colors and Fonts - Basic 목록에서 Text Font를 찾아 선택하고 Edit 후 원하는 글꼴과 크기로 변경</li>          
+        </ol>
+      </section>
+      <aside>
+        <img src="Eclipse-Luna-Logo.svg.png" alt="eclipse_logo">
+        <p>Eclipse(이클립스)는 자바를 비롯한 다양한 언어를 지원하는 프로그래밍 통합 개발 환경이자 프로그래밍 도구이다. 현재는 OSGi를 도입하여, 범용 응용 소프트웨어 플랫폼으로 진화하였다.
+          자바로 작성되어 있으며, 자유 소프트웨어이지만 막강한 기능을 자랑한다. 2004년과 2005년에 졸트 어워드(Jolt Award)를 수상했다.
+          식(蝕)을 뜻하는 이클립스란 이름은 자바를 개발한 회사의 SUN(재단)이란 이름을 염두에 두었다는 말도 있어 2003년도에 썬 마이크로시스템즈는 이클립스 재단에 참여하지 않았던 이유 중의 하나였지만 2005년도에 열린 EclipseCon의 키노트에서 Lee Nackman은 그 목적은 원래 마이크로소프트와 비주얼 스튜디오 생태 시스템을 겨냥한 것이었다고 말했다.[3]
+          원래 IBM의 웹스피어 스튜디오 애플리케이션 디밸로퍼(WebSpheare Studio Application Developer)란 이름으로 개발되었던 것인데, 엔진부분을 오픈소스로 공개한 것을 기반으로 지금의 이클립스로 발전해 왔다.
+          C/C++ 개발자용, 자바 개발자용, 웹 개발자용 등 다양한 배포판이 존재한다.
+          &nbsp;&nbsp;&nbsp; 출처 - 위키백과
+        </p>
+      </aside><br />
+      <section id="jdk_install">
+        <h3>Oracle JDK 설치</h3>
+        <ol>
+          <li>oracle.com 접속 후 회원가입 / 로그인</li>
+          <li>nav bar에서 제품(Products) 클릭</li>
+          <li>하드웨어 및 소프트웨어 (Hardware and Software) 하단의 Java 클릭</li>
+          <li>스크롤 내려서 Oracle JDK 찾아 클릭</li>
+          <li>Java archive 찾아 클릭</li>
+          <li>스크롤 내려서 Java SE 11 찾아 클릭</li>
+          <li>스크롤 내려서 Java SE Development Kit 11.0.17</li>
+          <li>Windows x64 버전 찾아서 다운로드<small> (jdk-11.0.17-windows-x64_bin.zip)</small></li>
+          <li>다운로드한 파일 실행 후 설치 진행</li>
+        </ol>
+      </section>
+      <section id="ev_setting">
+        <h3>환경변수 설정</h3>
+        <ol>
+          <li>JDK Binary 설치 경로 <q>C:\Program Files\java\jdk-11.0.17\bin</q> 복사 <kbd>Ctrl + C</kbd></li>
+          <li>Windows 검색창에 <q>환경</q> 검색</li>
+          <li>시스템 환경 변수 편집 클릭</li>
+          <li>시스템 속성 - 고급 창 하단에 환경변수 클릭</li>
+          <li>시스템 변수 아래 새로 만들기 클릭</li>
+          <li>새 시스템 변수 창에서 변수 이름은 <q>JAVA_HOME</q>, 변수 값은 복사했던 경로 <q>C:\Program Files\java\jdk-11.0.17\bin</q> 붙여넣기 <kbd>Ctrl + V</kbd></li>
+          <li>시스템 변수 아래 Path를 찾아 선택 후 편집 클릭</li>
+          <li>환경변수 편집 창에서 새로 만들기 클릭</li>
+          <li>%JAVA_HOME%\bin 입력 후 확인</li>
+          <li>시스템 변수 아래 새로 만들기 클릭</li>
+          <li>새 시스템 변수 창에서 변수 이름은 <q>CLASS_PATH</q>, 변수 값은 복사했던 경로 <q>%JAVA_HOME%\lib</q> 입력 후 확인</li>
+        </ol>
+      </section>
+      <aside>
+        <img src="jdk-jre.png" alt="jdk, jre, jvm">
+        <dl>
+          <dt>JDK (Java Development Kit):</dt>
+          <dd>
+            <li>Java 프로그래밍을 위한 개발 도구 모음</li>
+            <li>Java 컴파일러, 디버거, 문서 생성기 등의 개발 도구 포함</li>
+            <li>JRE(Java Runtime Environment)도 포함하고 있음</li>
+          </dd>
+          <dt>JRE (Java Runtime Environment):</dt>
+          <dd>
+            <li>Java 프로그램을 실행하기 위한 최소한의 런타임 환경</li>
+            <li>JVM(Java Virtual Machine)과 Java 표준 클래스 라이브러리로 구성</li>
+            <li>일반 사용자가 Java 애플리케이션을 실행하는 데 필요</li>
+          </dd>
+          <dt>JVM (Java Virtual Machine):</dt>
+          <dd>
+            <li>Java 바이트코드를 실행하는 가상 머신</li>
+            <li>운영 체제와 독립적으로 동작하여 플랫폼 독립성 제공</li>
+            <li>메모리 관리, 스레드 관리, 보안 등의 기능 수행</li>
+          </dd>
+          <br />&nbsp;&nbsp;&nbsp; 출처 - 뤼튼(Wrtn) AI 채팅
+        </dl>
+      </aside>
+    </main>
+    <hr />
+    <footer>
+      <small>이 문서에 대한 모든 권한은 soldesk와 정세나 강사님께 있습니다.</small>
+    </footer>
+  </body>
+</html>
